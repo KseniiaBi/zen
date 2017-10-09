@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zenvision</title>
+	<meta charset="utf-8">
+	<meta content="viewport" content="width=device-width">
+	<link rel="stylesheet" href="main.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+	<header>
+		<img class="logo" src="img/logo.png" alt="Zenvision">
+		<div id="menu-btn">
+				<div class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="closebtn">
+					<span></span>
+					<span></span>
+				</div>
+  		</div>
+
+		<ul class="nav">
+			<li><a href="#intro">Интро</a></li>
+			<li><a href="#about">Продукт</a></li>
+			<li><a href="#usage">Использование</a></li>
+			<li><a href="#features">Функции</a></li>
+			<li><a href="#descr">Оборудование</a></li>
+			<li><a href="#footer">Контакты</a></li>
+		</ul>
+	</header>
+
+	<section class="top" id="intro">
+		<div class="top_item vr-top">
+			<img src="img/vr-top.png" alt="Zenvision VR">
+			<h2>ZenVision™ <br>VR</h2>
+		</div>
+		<div class="top_item table-top">
+			<img src="img/table-top.png" alt="Zenvision Touch">
+			<h2>ZenVision™ <br>Touch</h2>
+		</div>
+		<div class="top_item soft-top">
+			<img src="img/soft-top.png" alt="Zenvision Software">
+			<h2>ZenVision™ <br>Software</h2>
+		</div>
+		<div class="">
+
+		</div>
+	</section>
+
+	<section class="prod" id="about">
+		<div class="prod-hdng">Комплексное <br>решение для <br>офисов продаж </div>
+
+		<div class="prod_inf">
+			<h1>Компания ZenVision™  разрабатывает комплексные решения для визуализации недвижимости.</h1>
+
+			<div class="prod_item">
+				<div class="pr_name">
+					<div class="num">01</div>
+					<span>Промышленный <br>multi-touch стол</span>
+				</div>
+				<img src="img/table-icon-big.png"  alt="Zenvision Touch">
+			</div>
+			<div class="prod_item">
+				<div class="pr_name">
+					<div class="num">02</div>
+					<span> 3D - приложение <br>ZenVision</span>
+				</div>
+				<img src="img/soft-icon.png"  alt="Zenvision Touch">
+			</div>
+			<div class="prod_item">
+				<div class="pr_name">
+					<div class="num">+</div>
+					<span>VR-шлем</span>
+				</div>
+				<img src="img/vr.svg"  alt="Zenvision Touch">
+			</div>
+		</div>
+
+	</section>
+
+	<section class="use" id="usage">
+		<img src="img/man.jpg" alt="">
+		<div class="use_right">
+			<div class="use_item">
+				<div class="num">01</div>
+				Наши решения позволяют повышать эффективность продажи и демонстрации объектов.
+			</div>
+			<div class="use_item">
+				<div class="num">02</div>
+				Решения от ZenVision™ используются в офисах продаж, шоу-румах, на выставочных стендах.
+			</div>
+		</div>
+	</section>
+
+<!-- end of @kseniiabi sections :) -->
+<section class="features" id="features">
+
+		<h3>ZenVision™ Software<br> <span class="subtext">Функции</span> </h3>
+
+		<!-- первый ряд -->
+		<div class="features_row first_ftrs_row">
+			<div class="features_icon active">
+				<img src="img/table-icon.png" alt="Table icon">
+			</div>
+			<div class="features_icon">	</div>
+			<div class="features_item active" onclick="changePreview(1)">
+				<span class="number subtext">01</span>
+				<p>Удобный подбор квартир по параметрам</p>
+			</div>
+			<div class="features_item active" onclick="changePreview(2)">
+				<span class="number subtext">02</span>
+				<p>Сравнение детальных планов квартир</p>
+			</div>
+			<div class="features_item active" onclick="changePreview(3)">
+				<span class="number subtext">03</span>
+				<p>Интерактивная 3D-модель окружения</p>
+			</div>
+		</div>
+
+		<!-- очки и его картинка -->
+		<div class="features_demo vr-mask"  id="glass" style="display: none;">
+			<img src="img/VR_EXPAND_BIG.svg" alt="table" class="around_img">
+			<img src="img/1_VR.png" alt="screen" id="4" class="color_img">
+			<img src="img/2_VR.png" alt="screen" id="5" class="color_img" style="display: none;">
+			<img src="img/3_VR.png" alt="screen" id="6" class="color_img" style="display: none;">
+		</div>
+
+		<!-- второй ряд -->
+		<div class="features_row second_ftrs_row">
+			<div class="features_icon active">
+				<img src="img/vr-icon.png" alt="Table icon">
+			</div>
+			<div class="features_icon"> </div>
+			<div class="features_item active" onclick="changePreview(4)">
+				<span class="number subtext">01</span>
+				<p>Свободноу перемещение по комплексу</p>
+			</div>
+			<div class="features_item active" onclick="changePreview(5)">
+				<span class="number subtext">02</span>
+				<p>Просмотр интерьера квартир</p>
+			</div>
+			<div class="features_item active" onclick="changePreview(6)">
+				<span class="number subtext">03</span>
+				<p>Вид из квартиры</p>
+			</div>
+		</div>
+		<!-- третий ряд -->
+		<div class="features_row third_ftrs_row">
+			<div class="features_icon">	</div>
+			<div class="features_icon"> </div>
+			<div class="features_item active">
+				<p>Интеграция с CRM-системами</p>
+			</div>
+			<div class="features_item active">
+				<p>Отправка документации в печать и на почту</p>
+			</div>
+			<div class="features_item"> </div>
+		</div>
+
+		<!-- стол и его картинка -->
+		<div class="features_demo " id="tbl">
+			<img src="img/TABLE_EXPAND_BIG.svg" alt="table"  class="around_img">
+			<img src="img/1_T.png" alt="screen" id="1" class="color_img"  style="display: none;">
+			<img src="img/2_T.png" alt="screen" id="2" class="color_img" style="display: none;">
+			<img src="img/3_T.png" alt="screen" id="3" class="color_img" >
+		</div>
+
+	</section>
+
+	<section class="description" id="descr">
+		<hr/>
+		<div class="description_left">
+			<h3>ZenVision™<br> <span>Touch</span> </h3>
+		</div>
+		<div class="description_center">
+			<h2>Промышленный multi-touch стол</h2>
+			<img src="img/solo-pic.png" alt="table">
+		</div>
+		<div class="description_right">
+			<h3>Характеристики</h3>
+			<img src="img/arrow-down.png" alt="arrow">
+			<span class="right-diag">
+				<p class="subtext">Диагональ</p>
+				<p>49",55" или 65"</p>
+			</span>
+			<span class="right-mater">
+				<p class="subtext">Материалы</p>
+				<p><img src="img/circles.png" alt=""> Алюминий</p>
+			</span>
+			<div class="right-advantages">
+				<p><img src="img/cpu-ico.png" alt="">Высокопроизводительный компьютер</p>
+				<p><img src="img/case-ico.png" alt="">Износостойкая конструкция</p>
+				<p><img src="img/gpu-ico.png" alt="">GeForce&reg; GTX 1080</p>
+				<p><img src="img/touch-ico.png" alt="">Современная сенсорная технология</p>
+				<p><img src="img/os-ico.png" alt="">Windows 10</p>
+				<p class="subtext">Предназначен для работы 24/7</p>
+				<p class="subtext">Собственное производство</p>
+			</div>
+		</div>
+
+	</section>
+
+	<footer class="footer" id="footer">
+		<hr/>
+		<div class="footer_left">
+			<h3>ZenVision™</h3>
+		</div>
+		<div class="footer_center">
+			<span class="footer_center_left">
+				<p>Краснопресненская наб. 12 <br/>
+					корп. 6, 13 этаж офис 1334</p>
+				<p>г. Москва</p>
+				<p>OOO "РУСИННОВАТЕХ"</p>
+			</span>
+			<span class="footer_center_right">
+				<a href="tel:+74993488737"><span>Т.:</span>+7 (499) 348-87-37</a>
+				<a href="mailto:sales@zenvision.ru" target="_top"><span>Е.:</span>sales@zenvision.ru</a>
+			</span>
+		</div>
+		<div class="footer_right">
+			<a href="#intro"><img src="img/arr-top.png" alt="to-top"></a>
+			<p class="subtext">&copy; 2017 ZenVision. Все права защищены</p>
+		</div>
+	</footer>
+
+</div>
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
