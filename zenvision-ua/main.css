@@ -893,25 +893,6 @@ header  #menu-btn{
 
 /* end of @kseniiabi styles */
 
-/*.solutions {
-	font-family: 'PFDinDisplayPro-Light', sans-serif;
-	font-size: 24px;
-	background: #f2f2f2;
-	border-top: 1px solid #cfcfcf;
-	border-bottom: 1px solid #cfcfcf;
-	padding-top: 108px;
-	padding-right: 8%;
-}
-.solutions img {
-	margin-bottom: -78px;
-}
-.solutions_col {
-	float: right;
-}
-.solutions_item {
-	width: 310px;
-	padding-bottom: 108px;
-}*/
 .features {
 	font-family: 'PFDinDisplayPro-Regular', sans-serif;
 	font-size: 21px;
@@ -1273,6 +1254,16 @@ header  #menu-btn{
 		top: 96px;
 		left: 37px;
 	}
+	.first_ftrs_row {
+	    height: auto;
+	}
+	.second_ftrs_row {
+	     height: auto;
+	}
+	.vr-mask{
+		height: 600px;
+		top: -100px;
+	}
 	.vr-mask .color_img{
 		top: 300px;
 	    left: 149px;
@@ -1366,7 +1357,7 @@ header  #menu-btn{
 	.features_row {
 		overflow: hidden;
 		overflow-x: auto;
-		height: 170px !important;
+		height: auto;
 		margin-bottom: 20px;
 	}
 	.features_row .features_item {
@@ -1381,17 +1372,24 @@ header  #menu-btn{
 		padding-left: 2%;
 		padding-right: 2%;
 	}
+	.features h3{
+		padding-bottom: 0;
+	}
 	.features_demo {
 		position: relative;
 		-webkit-transform: scale(0.5, 0.5);
 		transform: scale(0.5, 0.5);
-		top: -7rem;
+		top: -6rem;
 		right: 2rem;
 	}
 	.features_demo .color_img {
 		position: absolute;
 		top: 96px;
 		left: 37px;
+	}
+	.vr-mask{
+		top: -8rem;
+		height: 350px;
 	}
 	.vr-mask .color_img{
 		top: 300px;
@@ -1406,7 +1404,7 @@ header  #menu-btn{
 	.description_center img {
 		-webkit-transform: scale(0.5, 0.5);
 		transform: scale(0.5, 0.5);
-		margin-left: -16rem;
+		margin-left: -10rem;
 		margin-top: -8rem;
 	}
 	.footer_right {
@@ -1458,16 +1456,30 @@ header  #menu-btn{
 }
 @media (max-width: 420px){
 	.features_demo{
-		height: 800px;
-		top: -150px;
 		right: 5rem;
+		height: 400px;
 	}
 	.vr-mask{
-		height: 350px;
-	    top: -100px;
+		height: 650px;
+	    top: -13rem;
 	}
 	.description{
 		overflow-x: hidden;
 		margin-top: -300px;
+	}
+	.description_center img {
+	    -webkit-transform: scale(0.4, 0.4);
+	    transform: scale(0.4, 0.4);
+	    margin-left: -16rem;
+	    margin-top: -16rem;
+	}
+	.description_right {
+	    margin-top: -250px;
+	}
+	.description_right .right-advantages p:nth-of-type(6) {
+	     margin-top: 30px;
+	}
+	.footer_center_right {
+		width: max-content;
 	}
 }
