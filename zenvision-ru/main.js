@@ -41,8 +41,12 @@ function changePreview(c){
 
 	if(c <=3){
 		//table
-		$(glass).hide();
-		$(table).show();
+
+		if($(window).width() > 1175){
+
+			$(glass).hide();
+			$(table).show();
+		}
 
 		if(c == 1){
 			$('img#1').show();
@@ -62,9 +66,11 @@ function changePreview(c){
 	}
 	else{
 		//glass
-		$(glass).show();
-		$(table).hide();
 
+		if($(window).width() > 1175){
+			$(glass).show();
+			$(table).hide();
+		}
 
 		if(c == 4){
 			$('img#4').show();
